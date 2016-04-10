@@ -2,7 +2,7 @@
 # (1) a get.mat function to retrieve the matrix object
 # (2) a set.inverse function that takes in a matrix and sets it as an object called inverse
 # (3) a get.inverse function that returns the inverse object
-makeCacheMatrix <- function(mat = matrix()) {
+makeCacheMatrix <- function(mat = diag(3)) {
   inverse <- NULL
   get.mat <- function() mat
   set.inverse <- function(temp.inverse) inverse <<- temp.inverse
